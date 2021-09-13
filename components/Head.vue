@@ -1,10 +1,10 @@
 <template>
-  <div class="Hero">
+  <div class="Hero container">
     <div class="text-container">
       <h1 class="display-6">
         Let's find your Book!
       </h1>
-      <p class="snippet">
+      <p class="lead">
         Sometimes we can't find the physical book that we want in the libraries.
         That's why we provide you with <b>Books Trader</b> that will help you find what you want. <br>
         Happy reading!
@@ -34,14 +34,6 @@ export default {
     .text-container {
         width: 50%;
         margin-top: 4rem;
-    }
-    .header {
-        font-weight: 900;
-        font-size: 5rem;
-    }
-    .snippet {
-        color: grey;
-        font-size: 1.25rem;
     }
     .image {
         width: 27.5rem;

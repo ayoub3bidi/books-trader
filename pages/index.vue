@@ -1,11 +1,22 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <Head />
-    </div>
+  <div>
+    <Head /><br><br><br><br>
+    <LargeCardDisplay
+      v-for="cardInfo in largeCardInfo"
+      :key="cardInfo.id"
+      :info="cardInfo"
+    />
   </div>
 </template>
 
 <script>
-export default {}
+import { largeCardSections } from '@/assets/data.js'
+
+export default {
+  data () {
+    return {
+      largeCardInfo: largeCardSections
+    }
+  }
+}
 </script>
