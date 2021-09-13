@@ -6,6 +6,13 @@
     <p class="snippet">
       {{ info.snippet }}
     </p>
+    <div class="cards-container">
+      <LargeCard
+        v-for="card in info.cards"
+        :key="card.id"
+        :card="card"
+      />
+    </div>
   </div>
 </template>
 
