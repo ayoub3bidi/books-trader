@@ -1,5 +1,9 @@
 <template>
-  <Tutorial />
+  <div class="container">
+    <div class="row">
+      <Head />
+    </div>
+  </div>
 </template>
 
 <script>
