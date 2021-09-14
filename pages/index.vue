@@ -1,11 +1,15 @@
 <template>
   <div>
-    <Head /><br><br><br><br>
-    <LargeCardDisplay
-      v-for="cardInfo in largeCardInfo"
-      :key="cardInfo.id"
-      :info="cardInfo"
-    />
+    <Nav />
+    <div class="container">
+      <Head /><br><br><br><br>
+      <LargeCardDisplay
+        v-for="cardInfo in largeCardInfo"
+        :key="cardInfo.id"
+        :info="cardInfo"
+      />
+      <Footer />
+    </div>
   </div>
 </template>
 
